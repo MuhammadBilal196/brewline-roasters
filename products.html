@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore the specialty coffee collection from Brewline Roasters."
+    />
+
+    <title>Products | Brewline Roasters</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <span class="logo-main">BREWLINE</span>
+          <span class="logo-sub">ROASTERS</span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav class="navigation" id="navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+        </nav>
+
+        <a href="products.html" class="nav-button"> Shop Coffee </a>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+      <!-- PRODUCTS HERO -->
+
+      <section class="page-hero">
+        <div class="container page-hero-content">
+          <p class="section-label">FROM OUR ROASTERY</p>
+
+          <h1>Find your <span>perfect coffee.</span></h1>
+
+          <p>
+            Explore our carefully selected coffees, from bright single origins
+            to rich espresso blends.
+          </p>
+        </div>
+      </section>
+
+      <!-- PRODUCT COLLECTION -->
+
+      <section class="products-section section-padding">
+        <div class="container">
+          <div class="products-header">
+            <div>
+              <p class="section-label">OUR COLLECTION</p>
+
+              <h2>Coffee for every <span>moment.</span></h2>
+            </div>
+
+            <p class="products-count" id="productsCount">10 products</p>
+          </div>
+
+          <!-- FILTER BUTTONS -->
+
+          <div class="filter-buttons" aria-label="Product categories">
+            <button class="filter-button active" data-category="all">
+              All
+            </button>
+
+            <button class="filter-button" data-category="beans">
+              Coffee Beans
+            </button>
+
+            <button class="filter-button" data-category="ground">
+              Ground Coffee
+            </button>
+
+            <button class="filter-button" data-category="espresso">
+              Espresso
+            </button>
+
+            <button class="filter-button" data-category="accessories">
+              Accessories
+            </button>
+          </div>
+
+          <!-- PRODUCT GRID -->
+
+          <div class="product-grid products-page-grid" id="productGrid">
+            <!-- PRODUCT 1 -->
+
+            <article class="product-card" data-category="beans">
+              <div class="product-image">
+                <img
+                  src="/images/products/1.avif"
+                  alt="Ethiopian Yirgacheffe coffee beans"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">COFFEE BEANS</p>
+
+                <h3>Ethiopian Yirgacheffe</h3>
+
+                <p>Bright citrus notes with a delicate floral finish.</p>
+
+                <div class="product-bottom">
+                  <strong>$18.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    data-id="ethiopia-yirgacheffe"
+                    data-name="Ethiopia Yirgacheffe"
+                    data-price="18"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product-card" data-category="beans">
+              <div class="product-image">
+                <img
+                  src="/images/products/2.avif"
+                  alt="Colombian Supremo coffee"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">COFFEE BEANS</p>
+
+                <h3>Colombian Supremo</h3>
+
+                <p>Smooth caramel sweetness with chocolate notes.</p>
+
+                <div class="product-bottom">
+                  <strong>$16.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="colombian-supremo"
+                    data-name="Colombian Supremo"
+                    data-price="16"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product-card" data-category="beans">
+              <div class="product-image">
+                <img
+                  src="/images/products/3.avif"
+                  alt="Brazilian Santos coffee beans"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">COFFEE BEANS</p>
+
+                <h3>Brazilian Santos</h3>
+
+                <p>Smooth body with sweet nutty and cocoa flavors.</p>
+
+                <div class="product-bottom">
+                  <strong>$17.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="brazilian-santos"
+                    data-name="Brazilian Santos"
+                    data-price="17"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product-card" data-category="espresso">
+              <div class="product-image">
+                <img
+                  src="/images/products/4.avif"
+                  alt="Brewline house espresso"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">ESPRESSO</p>
+
+                <h3>House Espresso</h3>
+
+                <p>Rich dark chocolate with toasted almond notes.</p>
+
+                <div class="product-bottom">
+                  <strong>$19.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="house-espresso"
+                    data-name="House Espresso"
+                    data-price="19"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 5 -->
+
+            <article class="product-card" data-category="ground">
+              <div class="product-image">
+                <img
+                  src="/images/products/5.avif"
+                  alt="French Roast ground coffee"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">GROUND COFFEE</p>
+
+                <h3>French Roast</h3>
+
+                <p>Bold roasted flavor with a smooth smoky finish.</p>
+
+                <div class="product-bottom">
+                  <strong>$15.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="french-roast"
+                    data-name="French Roast"
+                    data-price="15"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 6 -->
+
+            <article class="product-card" data-category="ground">
+              <div class="product-image">
+                <img
+                  src="/images/products/6.avif"
+                  alt="Brewline morning blend coffee"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">GROUND COFFEE</p>
+
+                <h3>Morning Blend</h3>
+
+                <p>Balanced and smooth for your everyday morning cup.</p>
+
+                <div class="product-bottom">
+                  <strong>$14.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="morning-blend"
+                    data-name="Morning Blend"
+                    data-price="14"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 7 -->
+
+            <article class="product-card" data-category="beans">
+              <div class="product-image">
+                <img
+                  src="/images/products/7.avif"
+                  alt="Cold Brew Blend coffee beans"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">COFFEE BEANS</p>
+
+                <h3>Cold Brew Blend</h3>
+
+                <p>Sweet, smooth and designed for refreshing cold coffee.</p>
+
+                <div class="product-bottom">
+                  <strong>$17.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="cold-brew-blend"
+                    data-name="Cold Brew Blend"
+                    data-price="17"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 8 -->
+
+            <article class="product-card" data-category="espresso">
+              <div class="product-image">
+                <img
+                  src="/images/products/8.avif"
+                  alt="Dark roast espresso coffee"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">ESPRESSO</p>
+
+                <h3>Dark Roast Espresso</h3>
+
+                <p>Full-bodied espresso with rich caramel sweetness.</p>
+
+                <div class="product-bottom">
+                  <strong>$20.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="dark-roast-espresso"
+                    data-name="Dark Roast Espresso"
+                    data-price="20"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 9 -->
+
+            <article class="product-card" data-category="accessories">
+              <div class="product-image">
+                <img
+                  src="/images/products/9.avif"
+                  alt="Brewline ceramic coffee mug"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">ACCESSORIES</p>
+
+                <h3>Signature Mug</h3>
+
+                <p>
+                  Minimal ceramic mug designed for your daily coffee ritual.
+                </p>
+
+                <div class="product-bottom">
+                  <strong>$12.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="signature-mug"
+                    data-name="Signature Mug"
+                    data-price="12"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PRODUCT 10 -->
+
+            <article class="product-card" data-category="accessories">
+              <div class="product-image">
+                <img
+                  src="/images/products/10.avif"
+                  alt="Brewline reusable coffee cup"
+                />
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">ACCESSORIES</p>
+
+                <h3>Brewline Travel Cup</h3>
+
+                <p>A reusable coffee cup made for coffee on the move.</p>
+
+                <div class="product-bottom">
+                  <strong>$22.00</strong>
+
+                  <button
+                    class="add-to-cart"
+                    type="button"
+                    data-id="brewline-travel-cup"
+                    data-name="Brewline Travel Cup"
+                    data-price="22"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- NO RESULTS -->
+
+          <p class="no-products" id="noProducts">
+            No products found in this category.
+          </p>
+        </div>
+      </section>
+
+      <!-- COFFEE PROMO -->
+
+      <section class="coffee-promo">
+        <div class="container coffee-promo-content">
+          <div>
+            <p class="section-label">FRESHLY ROASTED</p>
+
+            <h2>
+              Good coffee deserves
+              <span>good company.</span>
+            </h2>
+
+            <p>
+              Whether you're brewing at home or sharing coffee with friends,
+              Brewline is roasted to make every cup memorable.
+            </p>
+          </div>
+
+          <a href="contact.html" class="button button-primary">
+            Get In Touch
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-main">BREWLINE</span>
+            <span class="logo-sub">ROASTERS</span>
+          </a>
+
+          <p>Specialty coffee, thoughtfully sourced and carefully roasted.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <p>123 Roast Street</p>
+          <p>Coffee District</p>
+          <p>hello@brewline.com</p>
+          <p>+1 555 123 4567</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Brewline Roasters. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
