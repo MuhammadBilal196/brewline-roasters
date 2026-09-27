@@ -95,6 +95,8 @@ Users can:
 - View total price
 - See the cart item count in the navigation
 
+-live link : https://muhammadbilal196.github.io/brewline-roasters/
+
 Cart data is stored using the browser's **Local Storage**, allowing cart information to remain available when the page is refreshed.
 
 The cart uses the following Local Storage key:
